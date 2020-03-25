@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Тарасий Седых](https://up.htmlacademy.ru/adaptive/19/user/904301).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
