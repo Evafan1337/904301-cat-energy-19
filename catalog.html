@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img class="page-header__logo-image" src="source/img/logo-mobile-header-svg.svg" width="191" height="39" alt="logo Cat Energy">
       </a>
       <nav class="main-nav">
@@ -28,11 +28,11 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hiden">Кэт Энерджи - фитнес еда для кошек</h1>
-      <section class="site-item">
+      <section class="page-main__site-item">
         <h2 class="visually-hiden">Навигация</h2>
         <h3 class="site-item__name">Каталог продукции</h3>
       </section>
-      <section class="products">
+      <section class="page-main__products">
         <div class="products__wrapper">
           <ul class="products__list price-list">
             <li class="price-list__item">
@@ -230,9 +230,7 @@
       <section class="option">
         <div class="option__wrapper">
           <h2 class="visually-hiden">Показать большк вкусов</h2>
-          <a href="#" class="option__add">
-            <img src="source/img/plus-mobile-svg.svg" class="option__add-img" width="31" height="31" alt="Плюс">
-          </a>
+          <a href="#" class="option__add option__add--img"></a>
           <h3 class="option__name">Показать еще 100500 товаров</h3>
           <p class="option__item">На самом деле вкусов гораздо больше!</p>
           <a href="#" class="option__btn button">Показать все</a>
@@ -240,28 +238,31 @@
       </section>
     </main>
     <footer class="page-footer">
-        <section class="cooperation">
+        <section class="page-footer__cooperation">
           <h2 class="visually-hiden">Адрес</h2>
+          <p>Приглашаем к сотрудничеству дилеров!</p>
+          <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </section>
-        <section class="contacts">
+        <section class="page-footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8544634516978!2d30.322127656627305!3d59.93869160879081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585646810576!5m2!1sru!2sru" width="600" height="450"></iframe>
+        </section>
+        <section class="page-footer__contacts">
           <h2 class="visually-hiden">Социальные сети</h2>
           <div class="contacts__wrapper">
-            <a href="#" class="contacts__name"><img src="source/img/footer-logo-svg.svg" class="contacts__name-img" width="128" height="24" alt="Cat Energy"></a>
+            <a href="#" class="contacts__name">Cat energy</a>
           </div>
           <div class="contacts__wrapper">
-            <div class="contacts__wrapper--icon">
-              <a href="" class="contacts__social"><img src="source/img/m-vk-svg.svg" class="contacts__social-vk" width="22" height="12" alt="vk"></a>
-              <a href="" class="contacts__social"><img src="source/img/m-insta-svg.svg" class="contacts__social-instagram" width="17" height="17" alt="inst"></a>
-              <a href="" class="contacts__social"><img src="source/img/m-fb-svg.svg" class="contacts__social-facebook" width="10" height="19" alt="facebook"></a>
-            </div>
+            <ul class="footer_icon">
+              <li><a class="social-btn social-btn--vk" href="#" aria-label="Vkontakte">Вконтакте</a></li>
+              <li><a class="social-btn social-btn--inst" href="#" aria-label="Instagram">Инстаграм</a></li>
+              <li><a class="social-btn social-btn--facebook" href="#" aria-label="Facebook">Фэйсбук</a></li>
+            </ul>
           </div>
           <div class="contacts__wrapper">
             <p class="contacts__academy">HTML Academy</p>
-            <a href="" class="contacts__logo"><img src="source/img/htmlacademy-svg.svg" class="contacts__logo-img" width="27" height="34" alt="logo академии"></a>
+            <a href="https://htmlacademy.ru/study" class="contacts__logo-academy"></a>
           </div>
-
         </section>
-
       </footer>
 </body>
 </html>
