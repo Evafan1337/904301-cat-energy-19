@@ -1,0 +1,28 @@
+.connection{
+
+}
+.connection__btn{
+  display: block;
+}
+.connection__btn--vk{
+  background-image: url("../img/m-vk-svg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 12px;
+
+}
+.connection__btn--inst{
+  background-image: url("../img/m-insta-svg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 23px;
+}
+.connection__btn--facebook{
+  background-image: url("../img/m-fb-svg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 19px;
+}

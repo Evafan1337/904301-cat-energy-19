@@ -1,0 +1,31 @@
+.price-list{
+	list-style: none;
+}
+.price-list__name{
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  text-transform: uppercase;
+  color: #111111;
+}
+.price-list__field{
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: left;
+}
+.price-list__value{
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: right;
+}
+.price-list__btn{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  background-color: #68b738;
+}
