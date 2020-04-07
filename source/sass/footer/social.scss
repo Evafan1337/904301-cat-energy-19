@@ -1,22 +1,31 @@
-.social{
+.social {
 
 }
-.social__icon{
+
+.social__icon {
   list-style: none;
 }
-.social__name{
+
+.social__name {
   display: block;
   background-image: url("../img/logo-footer.svg");
   background-repeat: no-repeat;
   width: 128px;
   height: 24px;
 }
-.social__logo-academy{
+
+.social__academy {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+}
+
+.social__logo-academy {
   display: block;
   background-image: url("../img/htmlacademy-svg.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;
-
 }
-
