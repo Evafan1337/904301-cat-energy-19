@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import "header/page-header";
+@import "header/main-nav";
+@import "header/site-list";
+@import "main/description";
+@import "main/fit-food";
+@import "main/grocery-list";
+@import "main/option";
+@import "main/page-main";
+@import "main/price-list";
+@import "main/structure";
+@import "main/welcome";
+@import "footer/address";
+@import "footer/connection";
+@import "footer/page-footer";
+@import "footer/social";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.visually-hiden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

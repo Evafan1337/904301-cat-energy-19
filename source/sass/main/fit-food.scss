@@ -1,0 +1,62 @@
+.fit-food {
+
+}
+
+.fit-food__wrapper {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.fit-food__btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #68b738;
+  color: #ffffff;
+  text-align: center;
+}
+
+.fit-food__list {
+  padding: 0;
+}
+
+.fit-food__item {
+  list-style: none;
+  min-height: 266px;
+  background-color: #f2f2f2;
+}
+
+.fit-food__caption {
+  font-size: 24px;
+  line-height: 1.54;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.fit-food__description {
+  font-family: "Arial", sans-serif;
+  text-align: left;
+}
+
+.fit-food__details {
+  font-size: 16px;
+  line-height: 1;
+  color: #111111;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.fit-food__details--arrow{
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+}
+
+.fit-food__caption--cat-slim{
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+}
+
+.fit-food__caption--cat-pro{
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+}
