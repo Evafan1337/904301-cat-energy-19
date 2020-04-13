@@ -1,0 +1,36 @@
+.welcome {
+  height: 305px;
+  color: #ffffff;
+  background-color: green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+}
+
+.welcome__wrapper {
+  padding-top: 30px;
+  padding-right: 34px;
+  padding-bottom: 25px;
+  padding-left: 34px;
+  min-height: 110px;
+}
+
+.welcome__slogan {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  font-weight: normal;
+}
+
+.welcome__intro {
+  margin-top: 19px;
+  line-height: 1;
+  text-align: center;
+}
+
+.welcome__btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #68b738;
+  color: #ffffff;
+  text-align: center;
+}

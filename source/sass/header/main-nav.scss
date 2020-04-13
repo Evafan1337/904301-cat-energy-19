@@ -1,0 +1,39 @@
+.main-nav {
+  width: auto;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-height: 65px;
+}
+
+.nav-mock {
+  min-height: 260px;
+}
+
+@media (min-width: 768px) {
+  .nav-mock {
+    min-height: 83px;
+  }
+}
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-nav__wrapper {
+    width: 1220px;
+  }
+}

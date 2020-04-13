@@ -1,0 +1,30 @@
+.site-list {
+  width: auto;
+  min-height: 195px;
+}
+
+.site-list__item {
+
+}
+
+.site-list__point {
+  text-decoration: none;
+  color: #111111;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    width: 438px;
+    min-height: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .site-list {
+    width: 477px;
+  }
+}
