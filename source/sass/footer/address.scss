@@ -3,21 +3,26 @@
 }
 
 .address__description {
+
   width: 123px;
   margin: 0;
+
   font-size: 16px;
   line-height: 1.25;
   text-align: left;
   text-transform: uppercase;
+
   color: #111111;
 }
 
 .address__item {
   width: 135px;
+
   font-style: normal;
   font-family: "Arial", sans-serif;
   line-height: 1.43;
   text-align: left;
+
   color: #444444;
 }
 
@@ -70,4 +75,5 @@
   .address__item {
     text-align: left;
   }
+
 }

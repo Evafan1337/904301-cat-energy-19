@@ -1,4 +1,5 @@
 .site-list {
+
   font-weight: bold;
   width: auto;
 }
@@ -27,6 +28,7 @@
   &:active {
     color: rgba(17, 17, 17, 0.3);
   }
+
 }
 
 .site-list__point {
@@ -36,6 +38,7 @@
   line-height: 1;
   text-transform: uppercase;
 }
+
 
 @media (min-width: 768px) {
   .site-list {
@@ -139,3 +142,4 @@
     }
   }
 }
+
