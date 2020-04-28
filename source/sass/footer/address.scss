@@ -3,15 +3,77 @@
 }
 
 .address__description {
+
+  width: 123px;
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.25;
   text-align: left;
   text-transform: uppercase;
+
+  color: #111111;
 }
 
 .address__item {
+  width: 135px;
+
   font-style: normal;
   font-family: "Arial", sans-serif;
   line-height: 1.43;
   text-align: left;
+
+  color: #444444;
+}
+
+.address__wrapper {
+  padding-bottom: 26px;
+  padding-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .address__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    padding-top: 69px;
+    padding-bottom: 62px;
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+  .address__description {
+    width: 154px;
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .address__item {
+    width: 155px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #444444;
+  }
+}
+
+@media (min-width: 1440px) {
+  .address {
+    width: 570px;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 95px;
+    margin-left: 110px;
+  }
+
+  .address__item {
+    text-align: left;
+  }
+
 }

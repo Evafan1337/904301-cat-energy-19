@@ -1,9 +1,35 @@
 .description {
 
+  margin-top: 1px;
 }
 
 .description__name {
+  margin: 0;
+  padding-left: 22px;
+  padding-top: 31px;
+  padding-bottom: 35px;
+  padding-right: 40px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
   font-size: 36px;
   line-height: 1.67;
   text-align: left;
+  color: #111111;
+}
+
+@media (min-width: 768px) {
+  .description__name {
+    padding-left: 33px;
+    font-size: 60px;
+    line-height: 1;
+    border: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .description__name {
+    border: none;
+    padding-left: 110px;
+  }
+
 }

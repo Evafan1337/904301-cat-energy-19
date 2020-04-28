@@ -7,15 +7,11 @@
   margin-left: 20px;
 }
 
-.fit-food__btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #68b738;
-  color: #ffffff;
-  text-align: center;
-}
 
 .fit-food__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   padding: 0;
 }
 
@@ -23,9 +19,23 @@
   list-style: none;
   min-height: 266px;
   background-color: #f2f2f2;
+
+  margin-top: 20px;
+}
+
+.fit-food__window {
+  position: relative;
+  padding-left: 21px;
+  padding-right: 30px;
+  padding-bottom: 22px;
+  padding-top: 22px;
 }
 
 .fit-food__caption {
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 70px;
+
   font-size: 24px;
   line-height: 1.54;
   text-align: left;
@@ -33,30 +43,217 @@
   text-transform: uppercase;
 }
 
+
+.fit-food__window::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+}
+
+.fit-food__window-cat::after {
+  content: "";
+  top: 0;
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+.fit-food__window-tiger::after {
+  content: "";
+  top: 0;
+  position: absolute;
+  display: block;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  margin-top: 34px;
+  margin-left: -9px;
+}
+
 .fit-food__description {
+  margin: 0;
+  padding-top: 36px;
   font-family: "Arial", sans-serif;
   text-align: left;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .fit-food__details {
+  display: block;
   font-size: 16px;
   line-height: 1;
   color: #111111;
   text-transform: uppercase;
   text-decoration: none;
+
+  margin-top: 20px;
 }
 
-.fit-food__details--arrow{
+.fit-food__details--arrow {
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
 
-.fit-food__caption--cat-slim{
+
+.fit-food__caption--cat-slim {
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
 }
 
-.fit-food__caption--cat-pro{
+
+.fit-food__caption--cat-pro {
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  .fit-food__wrapper {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .fit-food__description {
+    border: none;
+    min-width: 350px;
+    padding-right: 315px;
+  }
+
+  .fit-food__caption {
+    padding: 0;
+  }
+
+  .fit-food__window {
+    padding: 0;
+    padding-left: 55px;
+    padding-right: 62px;
+    padding-bottom: 62px;
+    padding-top: 80px;
+  }
+
+  .fit-food__window::before {
+    width: 200px;
+    height: 200px;
+    right: 0;
+    margin-right: 62px;
+  }
+
+  .fit-food__window-cat::after {
+    right: 0;
+    margin: 0;
+    width: 141px;
+    height: 194px;
+    margin-right: 92px;
+    margin-top: 68px;
+  }
+
+  .fit-food__window-tiger::after {
+    right: 0;
+    margin: 0;
+    width: 268px;
+    height: 113px;
+    margin-right: 28px;
+    margin-top: 135px;
+  }
+
+  .fit-food__details {
+    padding: 0;
+  }
+
+  .fit-food__description-cat {
+    padding: 0;
+    padding-top: 26px;
+    padding-bottom: 61px;
+    box-sizing: border-box;
+    padding-right: 260px;
+  }
+  .fit-food__description-tiger {
+    padding: 0;
+    padding-top: 31px;
+    padding-bottom: 61px;
+    box-sizing: border-box;
+    padding-right: 290px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fit-food__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .fit-food__wrapper {
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+
+  .fit-food__item {
+    width: 570px;
+    min-height: 372px;
+  }
+
+  .fit-food__window::before {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    margin-left: 52px;
+  }
+
+  .fit-food__window-cat::after {
+    margin: 0;
+    left: 0;
+    width: 71px;
+    height: 97px;
+    margin-left: 65px;
+    margin-top: 41px;
+  }
+
+  .fit-food__window-tiger::after {
+    margin: 0;
+    left: 0;
+    width: 134px;
+    height: 57px;
+    margin-left: 34px;
+    margin-top: 69px;
+  }
+
+  .fit-food__window {
+    padding: 0;
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-bottom: 62px;
+    padding-top: 47px;
+  }
+
+  .fit-food__caption {
+    padding: 0;
+    padding-left: 164px;
+    padding-top: 30px;
+  }
+
+  .fit-food__description-cat {
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 36px;
+  }
+
+  .fit-food__description-tiger {
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 36px;
+  }
+}
+

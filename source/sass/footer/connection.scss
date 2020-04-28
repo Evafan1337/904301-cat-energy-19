@@ -1,5 +1,12 @@
 .connection {
 
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 125px;
+  justify-content: space-between;
+
 }
 
 .connection__btn {

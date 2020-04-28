@@ -3,12 +3,38 @@
 }
 
 .page-header__logo {
-  display: inline-block;
+
+  display: block;
   width: 191px;
   height: 39px;
+
 }
 
 .log-img {
+  margin-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  width: 191px;
+  height: 39px;
   background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
+  background-position-y: 11px;
+}
+
+@media (min-width: 768px) {
+  .log-img {
+    padding: 0;
+    margin: 0;
+    padding-top: 24px;
+    background-position-y: 24px;
+    width: 174px;
+    height: 59px;
+    background-image: url("../img/logo-tablet.svg");
+  }
+
+  .page-header__logo {
+    width: 174px;
+    height: 59px;
+  }
+
 }

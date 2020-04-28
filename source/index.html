@@ -3,23 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="page-header">
-      <a href="index.html" class="page-header__logo log-img"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
+          <a href="index.html" class="page-header__logo log-img"></a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__point">Главная</a>
+              <a class="site-list__point site-list__index">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="site-list__point">Каталог продукции</a>
+              <a href="catalog.html" class="site-list__point site-list__index">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html" class="site-list__point">Подбор программы</a>
+              <a href="form.html" class="site-list__point site-list__index">Подбор программы</a>
+
             </li>
           </ul>
         </div>
@@ -29,23 +34,33 @@
     <main class="page-main">
       <h1 class="visually-hiden">Кэт Энерджи - фитнес еда для кошек</h1>
       <section class="page-main__food welcome">
-        <h3 class="welcome__slogan">Функциональное питание для котов</h3>
-        <p class="welcome__intro">Занялся собой? Займись котом!</p>
+
+        <div class="welcome__wrapper">
+          <h3 class="welcome__slogan">Функциональное питание для котов</h3>
+          <p class="welcome__intro">Занялся собой? Займись котом!</p>
+        </div>
+        <a href="form.html" class="welcome__btn button">Подобрать программу</a>
+
       </section>
       <section class="page-main__programs fit-food">
         <h2 class="visually-hiden">Программы питания</h2>
         <div class="fit-food__wrapper">
-          <a href="form.html" class="fit-food__btn button">Подобрать программу</a>
+
           <ul class="fit-food__list">
             <li class="fit-food__item">
-              <h3 class="fit-food__caption fit-food__caption--cat-slim">Похудение</h3>
-              <p class="fit-food__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="#" class="fit-food__details fit-food__details--arrow">Каталог Slim</a>
+              <div class="fit-food__window fit-food__window-cat">
+                <h3 class="fit-food__caption">Похудение</h3>
+                <p class="fit-food__description fit-food__description-cat">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a href="#" class="fit-food__details">Каталог Slim</a>
+              </div>
             </li>
             <li class="fit-food__item">
-              <h3 class="fit-food__caption fit-food__caption--cat-pro">Набор массы</h3>
-              <p class="fit-food__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a href="#" class="fit-food__details fit-food__details--arrow">Каталог Pro</a>
+              <div class="fit-food__window fit-food__window-tiger">
+                <h3 class="fit-food__caption">Набор массы</h3>
+                <p class="fit-food__description fit-food__description-tiger">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a href="#" class="fit-food__details">Каталог Pro</a>
+              </div>
+
             </li>
           </ul>
         </div>
@@ -55,17 +70,19 @@
         <div class="structure__wrapper">
           <h3 class="structure__title">Как это работает</h3>
           <ul class="structure__list">
-            <li class="structure__item structure__item--list">
-              Функциональное питание содержит только полезные питательные вещества.
+
+            <li class="structure__item structure__item-list">
+              <p class="structure__text structure__text-list">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
-            <li class="structure__item structure__item--water">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            <li class="structure__item structure__item-water">
+              <p class="structure__text structure__text-water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="structure__item structure__item--eat">
-              Замените один-два приема обычной еды на наше функциональное питание.
+            <li class="structure__item structure__item-eat">
+              <p class="structure__text structure__text-eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
-            <li class="structure__item structure__item--time">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <li class="structure__item structure__item-time">
+              <p class="structure__text structure__text-time">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+
             </li>
           </ul>
         </div>
@@ -75,29 +92,53 @@
     <footer class="page-footer">
         <section class="page-footer__cooperation address">
           <h2 class="visually-hiden">Адрес</h2>
-          <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="address__item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+
+          <div class="address__wrapper">
+            <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="address__item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
         </section>
         <section class="page-footer__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8544634516978!2d30.322127656627305!3d59.93869160879081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585646810576!5m2!1sru!2sru" width="600" height="450"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8544634516978!2d30.322127656627305!3d59.93869160879081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585646810576!5m2!1sru!2sru"></iframe>
+
         </section>
         <section class="page-footer__contacts social">
           <h2 class="visually-hiden">Социальные сети</h2>
           <div class="social__wrapper">
-            <a href="#" class="social__name"></a>
-          </div>
-          <div class="social__wrapper">
-            <ul class="social__icon connection">
-              <li><a class="connection__btn connection__btn--vk" href="#" aria-label="Vkontakte"><span class="visually-hiden">Вконтакте</span></a></li>
-              <li><a class="connection__btn connection__btn--inst" href="#" aria-label="Instagram"><span class="visually-hiden">Инстаграм</span></a></li>
-              <li><a class="connection__btn connection__btn--facebook" href="#" aria-label="Facebook"><span class="visually-hiden">Фэйсбук</span></a></li>
-            </ul>
-          </div>
-          <div class="social__wrapper">
-            <p class="social__academy">HTML Academy</p>
-            <a href="https://htmlacademy.ru/study" class="social__logo-academy"></a>
+1
+            <div class="social__wrapper-name">
+              <a href="#" class="social__name"></a>
+            </div>
+            <div class="social__wrapper-icon">
+              <ul class="social__icon connection">
+                <li><a class="connection__btn connection__btn--vk" href="#" aria-label="Vkontakte"><span class="visually-hiden">Вконтакте</span></a></li>
+                <li><a class="connection__btn connection__btn--inst" href="#" aria-label="Instagram"><span class="visually-hiden">Инстаграм</span></a></li>
+                <li><a class="connection__btn connection__btn--facebook" href="#" aria-label="Facebook"><span class="visually-hiden">Фэйсбук</span></a></li>
+              </ul>
+            </div>
+            <div class="social__wrapper-logo">
+              <p class="social__academy">HTML Academy</p>
+              <a href="https://htmlacademy.ru/study" class="social__logo-academy"></a>
+            </div>
           </div>
         </section>
       </footer>
+      <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
+
   </body>
 </html>

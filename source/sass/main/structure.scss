@@ -1,9 +1,88 @@
 .structure__item {
+
+  margin-top: 32px;
   font-family: "Arial", sans-serif;
   text-align: left;
+  padding-left: 80px;
+  position: relative;
+  padding-top: 3px;
+  min-height: 60px;
+}
+
+.structure__text{
+    margin: 0;
+}
+
+.structure__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+}
+.structure__item-list::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.structure__item-water::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.structure__item-eat::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.structure__item-time::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .structure__title {
+  margin: 0;
+
   font-size: 36px;
   line-height: 1.67;
   text-align: left;
@@ -11,6 +90,166 @@
 }
 
 .structure__list {
+
+  margin: 0;
   list-style: none;
   padding: 0;
 }
+
+.structure__wrapper {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .structure__wrapper {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .structure__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .structure__item-list::after {
+    margin: 15px;
+  }
+
+  .structure__item-water::after {
+    margin: 15px;
+  }
+
+  .structure__item-eat::after {
+    margin: 15px;
+  }
+
+  .structure__item-time::after {
+    margin: 15px;
+  }
+
+  .structure__text-list {
+
+  }
+
+  .structure__text-list::after {
+    content: "1";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 71px;
+    height: 228px;
+    font-family: "Oswald";
+    font-size: 281px;
+    font-weight: normal;
+    line-height: 1;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -38px;
+    margin-right: 38px;
+  }
+
+  .structure__text-water::after {
+    content: "2";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 71px;
+    height: 228px;
+    font-family: "Oswald";
+    font-size: 281px;
+    font-weight: normal;
+    line-height: 1;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -38px;
+    margin-right: 40px;
+  }
+
+   .structure__text-eat::after {
+    content: "3";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 71px;
+    height: 228px;
+    font-family: "Oswald";
+    font-size: 281px;
+    font-weight: normal;
+    line-height: 1;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -38px;
+    margin-right: 40px;
+  }
+
+   .structure__text-time::after {
+    content: "4";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 71px;
+    height: 228px;
+    font-family: "Oswald";
+    font-size: 281px;
+    font-weight: normal;
+    line-height: 1;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -38px;
+    margin-right: 40px;
+  }
+
+  .structure__item {
+    padding: 0;
+    position: relative;
+    padding-top: 117px;
+    width: 240px;
+    padding-bottom: 87px;
+  }
+
+  .structure__item-water {
+    margin-left: 183px;
+  }
+
+  .structure__item-time {
+    margin-left: 183px;
+  }
+
+  .structure__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .structure__title {
+    font-size: 60px;
+  }
+
+  .structure__text {
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1440px) {
+  .structure__item {
+    margin: 0;
+  }
+
+  .structure__wrapper {
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+
+  .structure__list {
+    padding-top: 63px;
+    justify-content: space-between;
+  }
+}
+
