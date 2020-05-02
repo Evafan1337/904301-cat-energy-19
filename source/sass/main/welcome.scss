@@ -1,5 +1,4 @@
 .welcome {
-
   position: relative;
   color: #ffffff;
 }
@@ -22,7 +21,7 @@
 
 .welcome__wrapper {
   position: relative;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-right: 34px;
   padding-bottom: 25px;
   padding-left: 34px;
@@ -45,7 +44,6 @@
 
 .welcome__slogan {
   margin: 0;
-
   font-size: 36px;
   line-height: 1;
   text-align: center;
@@ -53,11 +51,11 @@
 }
 
 .welcome__intro {
-
-  margin-top: 19px;
+  text-transform: uppercase;
+  margin-top: 26px;
   line-height: 1;
   text-align: center;
-  margin-bottom: 271px;
+  margin-bottom: 274px;
 }
 
 .welcome__btn {
@@ -68,56 +66,64 @@
   color: #ffffff;
   text-align: center;
   box-sizing: border-box;
-  padding: 14px 73px 11px 73px;
+  padding: 11px 71px 11px 69px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 @media (min-width: 768px) {
   .welcome::before {
     display: none;
   }
+
   .welcome__wrapper::before {
     width: 709px;
     height: 609px;
     top: 0;
-    margin-top: 300px;
+    margin-top: 259px;
     z-index: -1;
     background-image: url("../img/index-can-tablet@1x.jpg");
   }
 
   .welcome {
     color: black;
-    padding-bottom: 529px;
+    padding-bottom: 510px;
   }
 
   .welcome__slogan {
+    margin: 0;
     width: 415px;
-    padding-top: 61px;
-    padding-left: 90px;
+    padding-top: 29px;
+    padding-left: 83px;
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 30px;
+    padding-bottom: 22px;
     text-align: left;
   }
 
   .welcome__intro {
+    margin: 0;
     font-size: 20px;
-    margin-bottom: 48px;
-    padding-left: 90px;
+    padding-top: 19px;
+    padding-bottom: 23px;
+    padding-left: 84px;
     text-align: left;
   }
 
   .welcome__btn {
+    margin: 0;
+    line-height: 1;
     margin-left: 120px;
-    padding: 17px 26px 15px 26px;
+    padding: 16px 26px 16px 20px;
     font-size: 20px;
     min-width: 245px;
-    margin-right: 374px;
+    margin-right: 100%;
   }
 }
 
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   .welcome::before {
     display: block;
     width: 50%;
@@ -125,30 +131,45 @@
     right: 0;
     left: unset;
     background-image: url("../img/index-background-desktop@1x.jpg");
-    min-height: 696px;
+    background-position: 3% 97%;
+    min-height: 665px;
   }
+
   .welcome {
     position: unset;
+    padding-bottom: 268px;
   }
-  .welcome__wrapper::before {
-    background-image: url("../img/index-can-desktop@1x.png");
-    width: 552px;
-    height: 499px;
-    padding-left: 150px;
-    padding-top: 34px;
-    background-position-x: 192px;
-    background-position-y: 34px;
+
+  .welcome__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .welcome__slogan {
+    padding-top: 80px;
+    padding-left: 80px;
+  }
+
+  .welcome__intro {
+    padding-left: 80px;
+    padding-bottom: 28px;
   }
 
   .welcome__wrapper::before {
     margin: 0;
+    background-image: url("../img/index-can-desktop@1x.png");
+    width: 552px;
+    height: 499px;
+    padding-left: 150px;
+    padding-top: 48px;
+    background-position-x: 192px;
+    background-position-y: 28px;
   }
 
   .welcome__btn {
-    margin-right: 1005px;
-  }
-
-  .welcome {
-    padding-bottom: 268px;
+    margin-right: 100%;
+    margin-left: 190px;
+    padding-top: 15px;
+    padding-left: 23px;
   }
 }
