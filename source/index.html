@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="./css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="index-page">
 
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -17,13 +17,13 @@
           <a href="index.html" class="page-header__logo log-img"></a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__point site-list__index">Главная</a>
+              <a class="site-list__point">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="site-list__point site-list__index">Каталог продукции</a>
+              <a href="catalog.html" class="site-list__point site-list__point--href">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html" class="site-list__point site-list__index">Подбор программы</a>
+              <a href="form.html" class="site-list__point site-list__point--href">Подбор программы</a>
 
             </li>
           </ul>
@@ -70,7 +70,6 @@
         <div class="structure__wrapper">
           <h3 class="structure__title">Как это работает</h3>
           <ul class="structure__list">
-
             <li class="structure__item structure__item-list">
               <p class="structure__text structure__text-list">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
@@ -92,7 +91,6 @@
     <footer class="page-footer">
         <section class="page-footer__cooperation address">
           <h2 class="visually-hiden">Адрес</h2>
-
           <div class="address__wrapper">
             <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
             <address class="address__item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -100,12 +98,10 @@
         </section>
         <section class="page-footer__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8544634516978!2d30.322127656627305!3d59.93869160879081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585646810576!5m2!1sru!2sru"></iframe>
-
         </section>
         <section class="page-footer__contacts social">
           <h2 class="visually-hiden">Социальные сети</h2>
           <div class="social__wrapper">
-1
             <div class="social__wrapper-name">
               <a href="#" class="social__name"></a>
             </div>
@@ -126,14 +122,13 @@
       <script>
         var navMain = document.querySelector('.main-nav');
         var navToggle = document.querySelector('.main-nav__toggle');
-
         navMain.classList.remove('main-nav--nojs');
-
         navToggle.addEventListener('click', function() {
           if (navMain.classList.contains('main-nav--closed')) {
             navMain.classList.remove('main-nav--closed');
             navMain.classList.add('main-nav--opened');
-          } else {
+          }
+          else {
             navMain.classList.add('main-nav--closed');
             navMain.classList.remove('main-nav--opened');
           }

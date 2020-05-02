@@ -1,16 +1,19 @@
 .structure__item {
-
-  margin-top: 32px;
+  margin-top: 20px;
   font-family: "Arial", sans-serif;
   text-align: left;
   padding-left: 80px;
   position: relative;
-  padding-top: 3px;
   min-height: 60px;
 }
 
-.structure__text{
-    margin: 0;
+.structure__item:first-child {
+  margin: 0;
+}
+
+.structure__text {
+  margin: 0;
+  padding-top: 3px;
 }
 
 .structure__item::before {
@@ -20,10 +23,10 @@
   width: 60px;
   height: 60px;
   left: 0;
-  top: 0;
   background-color: #68b738;
   background-repeat: no-repeat;
 }
+
 .structure__item-list::after {
   content: "";
   top: 0;
@@ -82,15 +85,15 @@
 
 .structure__title {
   margin: 0;
-
+  padding-top: 17px;
   font-size: 36px;
   line-height: 1.67;
   text-align: left;
   color: #111111;
+  padding-bottom: 28px;
 }
 
 .structure__list {
-
   margin: 0;
   list-style: none;
   padding: 0;
@@ -110,26 +113,28 @@
   .structure__item::before {
     width: 80px;
     height: 80px;
+    top: 3px;
+    margin: 0;
   }
 
   .structure__item-list::after {
-    margin: 15px;
+    margin-left: 15px;
+    margin-top: 19px;
   }
 
   .structure__item-water::after {
-    margin: 15px;
+    margin-left: 16px;
+    margin-top: 20px;
   }
 
   .structure__item-eat::after {
-    margin: 15px;
+    margin-left: 15px;
+    margin-top: 19px;
   }
 
   .structure__item-time::after {
-    margin: 15px;
-  }
-
-  .structure__text-list {
-
+    margin-left: 16px;
+    margin-top: 18px;
   }
 
   .structure__text-list::after {
@@ -140,14 +145,14 @@
     right: 0;
     width: 71px;
     height: 228px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 281px;
     font-weight: normal;
     line-height: 1;
     color: #f2f2f2;
     z-index: -1;
-    margin-top: -38px;
-    margin-right: 38px;
+    margin-top: -36px;
+    margin-right: 51px;
   }
 
   .structure__text-water::after {
@@ -158,17 +163,17 @@
     right: 0;
     width: 71px;
     height: 228px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 281px;
     font-weight: normal;
     line-height: 1;
     color: #f2f2f2;
     z-index: -1;
-    margin-top: -38px;
-    margin-right: 40px;
+    margin-top: -36px;
+    margin-right: 57px;
   }
 
-   .structure__text-eat::after {
+  .structure__text-eat::after {
     content: "3";
     position: absolute;
     display: block;
@@ -176,17 +181,17 @@
     right: 0;
     width: 71px;
     height: 228px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 281px;
     font-weight: normal;
     line-height: 1;
     color: #f2f2f2;
     z-index: -1;
     margin-top: -38px;
-    margin-right: 40px;
+    margin-right: 57px;
   }
 
-   .structure__text-time::after {
+  .structure__text-time::after {
     content: "4";
     position: absolute;
     display: block;
@@ -194,43 +199,48 @@
     right: 0;
     width: 71px;
     height: 228px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 281px;
     font-weight: normal;
     line-height: 1;
     color: #f2f2f2;
     z-index: -1;
-    margin-top: -38px;
-    margin-right: 40px;
+    margin-top: -36px;
+    margin-right: 55px;
   }
 
   .structure__item {
+    margin: 0;
     padding: 0;
     position: relative;
-    padding-top: 117px;
+    padding-top: 113px;
     width: 240px;
     padding-bottom: 87px;
+    margin-bottom: 43px;
   }
 
   .structure__item-water {
-    margin-left: 183px;
+    margin-left: 143px;
   }
 
   .structure__item-time {
-    margin-left: 183px;
+    margin-left: 143px;
   }
 
   .structure__list {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40px;
   }
 
   .structure__title {
     font-size: 60px;
+    line-height: 1;
+    padding-top: 46px;
   }
 
   .structure__text {
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
@@ -239,6 +249,7 @@
 
 @media (min-width: 1440px) {
   .structure__item {
+    width: 245px;
     margin: 0;
   }
 
@@ -248,8 +259,37 @@
   }
 
   .structure__list {
-    padding-top: 63px;
+    padding-top: 40px;
     justify-content: space-between;
   }
-}
 
+  .structure__title {
+    padding-top: 75px;
+  }
+
+  .structure__text {
+    padding-top: 2px;
+  }
+
+  .structure__item-water::after {
+    margin-left: 15px;
+    margin-top: 18px;
+  }
+
+  .structure__text-list::after {
+    margin-right: 56px;
+  }
+
+  .structure__text-water::after {
+    margin-right: 62px;
+  }
+
+  .structure__text-eat::after {
+    margin-top: -36px;
+    margin-right: 61px;
+  }
+
+  .structure__text-time::after {
+    margin-right: 62px;
+  }
+}

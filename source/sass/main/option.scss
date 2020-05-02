@@ -1,12 +1,12 @@
-.option {
-
-}
-
 .option__name {
   font-size: 16px;
   line-height: 1.25;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 2px;
 }
 
 .option__item {
@@ -15,6 +15,8 @@
   line-height: 1.33;
   text-align: center;
   color: #444444;
+  margin: 0;
+  padding-top: 7px;
 }
 
 .option__btn {
@@ -23,4 +25,50 @@
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
+  display: block;
+  padding-left: 2px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  background-color: #f2f2f2;
+  margin-top: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.option {
+  position: relative;
+}
+
+.option__wrapper {
+  padding-top: 75px;
+}
+
+.option__add {
+  display: block;
+}
+
+.option__add::before {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  opacity: 0.2;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 27px;
+}
+
+@media (min-width: 768px) {
+  .option__wrapper {
+    padding-top: 165px;
+  }
+
+  .option__add::before {
+    width: 61px;
+    height: 61px;
+    margin-top: 55px;
+  }
 }

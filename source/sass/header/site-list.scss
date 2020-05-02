@@ -1,26 +1,25 @@
 .site-list {
-
   font-weight: bold;
   width: auto;
 }
 
-.site-list a {
+.site-list__point {
+  letter-spacing: 1px;
   display: block;
-  text-align: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  font-size: 20px;
-  line-height: 1;
-  // color: #111111;
-  text-transform: uppercase;
   text-decoration: none;
-
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  color: #111111;
+  text-transform: uppercase;
   background-color: #ffffff;
   border-top: 1px solid #e6e6e6;
 }
 
-.site-list a[href] {
+.site-list__point--href {
   &:hover {
     color: rgba(17, 17, 17, 0.6);
   }
@@ -28,17 +27,7 @@
   &:active {
     color: rgba(17, 17, 17, 0.3);
   }
-
 }
-
-.site-list__point {
-  text-decoration: none;
-  color: #111111;
-  font-weight: 500;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
 
 @media (min-width: 768px) {
   .site-list {
@@ -49,12 +38,8 @@
     min-height: 60px;
   }
 
-  .site-list__point {
-    color: #222222;
-  }
-
   .site-list__item {
-    margin-right: 37px;
+    margin-right: 36px;
 
     &:last-child {
       margin-right: 0;
@@ -65,28 +50,29 @@
 
       &::after {
         content: "";
-
         position: absolute;
         right: 0;
         bottom: 7px;
         left: 0;
-
         height: 2px;
-
         background-color: #68b738;
       }
     }
   }
 
-  .site-list__item a {
+  .site-list__point {
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: #222222;
     padding: 0;
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 12px;
     background: none;
     border: none;
   }
 
-  .site-list__item a[href] {
+  .site-list__point--href {
     &:hover {
       color: rgba(17, 17, 17, 0.6);
     }
@@ -99,37 +85,36 @@
   }
 
   .site-list__item {
+    padding-right: 17px;
+    padding-left: 17px;
     margin-right: 0;
 
-     &--active::after {
-      right: 15px;
-      left: 15px;
+    &:last-child {
+      margin-right: -16px;
+    }
+
+    &--active::after {
+      right: 18px;
+      left: 18px;
       background-color: #68b738;
     }
   }
 
-  .site-list__index {
+  .index-page .site-list__point {
     color: #ffffff;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 15px;
-      bottom: 1px;
-      left: 15px;
-      height: 2px;
-      background-color: #ffffff;
-      z-index: 1;
-    }
   }
 
-  .site-list__item a {
-    padding-right: 15px;
-    padding-left: 15px;
+  .index-page .site-list__item--active::after {
+    background-color: #ffffff;
   }
 
-  .site-list__item a[href] {
+  .site-list__point {
+    letter-spacing: 1px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .site-list__point--href {
     &:hover {
       color: rgba(17, 17, 17, 0.6);
     }
@@ -142,4 +127,3 @@
     }
   }
 }
-

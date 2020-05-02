@@ -1,13 +1,12 @@
 .description {
-
   margin-top: 1px;
 }
 
 .description__name {
   margin: 0;
-  padding-left: 22px;
-  padding-top: 31px;
-  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 29px;
   padding-right: 40px;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
@@ -19,7 +18,8 @@
 
 @media (min-width: 768px) {
   .description__name {
-    padding-left: 33px;
+    padding-top: 57px;
+    padding-left: 30px;
     font-size: 60px;
     line-height: 1;
     border: none;
@@ -31,5 +31,4 @@
     border: none;
     padding-left: 110px;
   }
-
 }
