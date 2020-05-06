@@ -1,3 +1,8 @@
+.address {
+  position: absolute;
+  width: 100%;
+}
+
 .address__description {
   width: 123px;
   margin: 0;
@@ -28,6 +33,10 @@
 }
 
 @media (min-width: 768px) {
+  .address {
+    position: inherit;
+  }
+
   .address__wrapper {
     display: flex;
     justify-content: space-between;

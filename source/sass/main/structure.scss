@@ -1,3 +1,6 @@
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
 .structure__item {
   margin-top: 20px;
   font-family: "Arial", sans-serif;
@@ -120,21 +123,41 @@
   .structure__item-list::after {
     margin-left: 15px;
     margin-top: 19px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: cover;
+    }
   }
 
   .structure__item-water::after {
     margin-left: 16px;
-    margin-top: 20px;
+    margin-top: 19px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: cover;
+    }
   }
 
   .structure__item-eat::after {
     margin-left: 15px;
     margin-top: 19px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: cover;
+    }
   }
 
   .structure__item-time::after {
     margin-left: 16px;
     margin-top: 18px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: cover;
+    }
   }
 
   .structure__text-list::after {

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="./css/style.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -38,9 +42,13 @@
           <ul class="grocery-list__list price-list">
             <li class="price-list__item">
               <div class="price-list__wrapper">
-                <figure class="price-list__eat">
+                <figure class="price-list__eat price-list__eat--small">
                   <a href="#" class="price-list__eat-img">
-                    <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Корм(Курица)">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png, img/chicken-small-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png, img/chicken-small-tablet@2x.png 2x">
+                      <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Корм(Курица)">
+                    </picture>
                   </a>
                 </figure>
                 <div class="price-list__container">
@@ -56,7 +64,7 @@
                     </tr>
                     <tr class="price-list__line">
                       <td class="price-list__field">Цена</td>
-                      <td class="price-list__value">700 Р</td>
+                      <td class="price-list__value">700 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -65,9 +73,13 @@
             </li>
             <li class="price-list__item">
                 <div class="price-list__wrapper">
-                  <figure class="price-list__eat">
+                  <figure class="price-list__eat price-list__eat--big">
                     <a href="#" class="price-list__eat-img">
-                      <img src="../img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Корм(Курица)">
+                      <picture>
+                        <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png, img/chicken-big-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png, img/chicken-big-tablet@2x.png 2x">
+                        <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Корм(Курица)">
+                      </picture>
                     </a>
                   </figure>
                   <div class="price-list__container">
@@ -83,7 +95,7 @@
                       </tr>
                       <tr class="price-list__line">
                         <td class="price-list__field">Цена</td>
-                        <td class="price-list__value">1000 Р</td>
+                        <td class="price-list__value">1000 Р.</td>
                       </tr>
                     </table>
                   </div>
@@ -92,9 +104,13 @@
             </li>
             <li class="price-list__item">
                 <div class="price-list__wrapper">
-                  <figure class="price-list__eat">
+                  <figure class="price-list__eat price-list__eat--small">
                     <a href="#" class="price-list__eat-img">
-                      <img src="../img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Корм(Рыба)">
+                      <picture>
+                        <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png 2x">
+                        <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Корм(Рыба)">
+                      </picture>
                     </a>
                   </figure>
                   <div class="price-list__container">
@@ -110,7 +126,7 @@
                       </tr>
                       <tr class="price-list__line">
                         <td class="price-list__field">Цена</td>
-                        <td class="price-list__value">700 Р</td>
+                        <td class="price-list__value">700 Р.</td>
                       </tr>
                     </table>
                   </div>
@@ -119,9 +135,13 @@
             </li>
             <li class="price-list__item">
               <div class="price-list__wrapper">
-                <figure class="price-list__eat">
+                <figure class="price-list__eat price-list__eat--big">
                   <a href="#" class="price-list__eat-img">
-                    <img src="../img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Корм(Рыба)">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png, img/fish-big-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png, img/fish-big-tablet@2x.png 2x">
+                      <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Корм(Рыба)">
+                    </picture>
                   </a>
                 </figure>
                 <div class="price-list__container">
@@ -137,7 +157,7 @@
                     </tr>
                     <tr class="price-list__line">
                       <td class="price-list__field">Цена</td>
-                      <td class="price-list__value">1000 Р</td>
+                      <td class="price-list__value">1000 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -146,9 +166,13 @@
             </li>
             <li class="price-list__item">
               <div class="price-list__wrapper">
-                <figure class="price-list__eat">
+                <figure class="price-list__eat price-list__eat--small">
                   <a href="#" class="price-list__eat-img">
-                    <img src="../img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Корм(Гречка)">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png, img/buckwheat-small-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png, img/buckwheat-small-tablet@2x.png 2x">
+                      <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Корм(Гречка)">
+                    </picture>
                   </a>
                 </figure>
                 <div class="price-list__container">
@@ -164,7 +188,7 @@
                     </tr>
                     <tr class="price-list__line">
                       <td class="price-list__field">Цена</td>
-                      <td class="price-list__value">400 Р</td>
+                      <td class="price-list__value">400 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -173,9 +197,13 @@
             </li>
             <li class="price-list__item">
               <div class="price-list__wrapper">
-                <figure class="price-list__eat">
+                <figure class="price-list__eat price-list__eat--big">
                   <a href="#" class="price-list__eat-img">
-                    <img src="../img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Корм(Гречка)">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png, img/buckwheat-big-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png, img/buckwheat-big-tablet@2x.png 2x">
+                      <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Корм(Гречка)">
+                    </picture>
                   </a>
                 </figure>
                 <div class="price-list__container">
@@ -191,7 +219,7 @@
                     </tr>
                     <tr class="price-list__line">
                       <td class="price-list__field">Цена</td>
-                      <td class="price-list__value">700 Р</td>
+                      <td class="price-list__value">700 Р.</td>
                     </tr>
                   </table>
                 </div>
@@ -200,9 +228,13 @@
             </li>
             <li class="price-list__item">
               <div class="price-list__wrapper">
-                <figure class="price-list__eat">
+                <figure class="price-list__eat price-list__eat--small">
                   <a href="#" class="price-list__eat-img">
-                    <img src="../img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Корм(Рис)">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png, img/rice-small-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png, img/rice-small-tablet@2x.png 2x">
+                      <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Корм(Рис)">
+                    </picture>
                   </a>
                 </figure>
                 <div class="price-list__container">
@@ -218,7 +250,7 @@
                     </tr>
                     <tr class="price-list__line">
                       <td class="price-list__field">Цена</td>
-                      <td class="price-list__value">500 Р</td>
+                      <td class="price-list__value">500 Р.</td>
                     </tr>
                   </table>
                 </div>
