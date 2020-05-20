@@ -2,6 +2,10 @@
   list-style: none;
 }
 
+.social__academy {
+  margin-top: 10px;
+}
+
 .social__name {
   display: block;
   background-image: url("../img/logo-footer.svg");
@@ -10,6 +14,15 @@
   height: 24px;
   margin-top: 39px;
   margin-bottom: 31px;
+
+  &:hover,
+  &:focus{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
 }
 
 .social__academy {
@@ -22,15 +35,41 @@
 
 .social__logo-academy {
   display: block;
-  background-image: url("../img/htmlacademy-svg.svg");
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 34px;
+  text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &:hover .social__icon-logo-academy {
+    fill: #68b738;
+  }
+
+  &:focus .social__icon-logo-academy {
+    fill: #68b738;
+  }
+
+  &:active .social__icon-logo-academy {
+    opacity: 0.3;
+  }
+
+  &:hover .social__academy {
+    color: #68b738;
+  }
+
+  &:focus .social__academy {
+    color: #68b738;
+  }
+
+  &:active .social__academy {
+    opacity: 0.3;
+  }
 }
 
 .social__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .social__wrapper-logo {
@@ -58,28 +97,61 @@
 }
 
 @media (min-width: 768px) {
+  .social {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 47px;
+  }
+
   .social__wrapper {
     display: flex;
-    min-height: 150px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .social__wrapper-icon {
-    padding-left: 155px;
+    border: none;
+    width: 54.24%;
   }
 
   .social__wrapper-logo {
-    padding-left: 155px;
+    width: 22.88%;
+  }
+
+  .social__wrapper-name {
+    justify-content: flex-start;
+    width: 22.88%;
+    min-height: 0;
+  }
+
+  .social__name {
+    margin: 0;
+  }
+
+  .social__academy {
+    margin-top: 16px;
   }
 }
 
 @media (min-width: 1440px) {
+  .social {
+    padding: 0;
+    padding-top: 5px;
+  }
+
   .social__wrapper {
     display: flex;
     justify-content: space-between;
     min-height: 150px;
-    margin-left: 110px;
-    margin-right: 110px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .social__wrapper-logo {
+    justify-content: flex-end;
+  }
+
+  .social__academy {
+    padding-right: 23px;
   }
 }

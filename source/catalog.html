@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="./css/style.css" rel="stylesheet">
-    <script>
-      document.createElement( "picture" );
-    </script>
     <script src="picturefill.js" async></script>
   </head>
   <body>
@@ -16,7 +13,11 @@
       <nav class="main-nav nav-mock main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <a href="index.html" class="page-header__logo log-img"></a>
+          <a href="index.html" class="page-header__logo log-img">
+            <svg class="main-nav__icon-logo-mobile" width="191" height="38"><use xlink:href="img/sprite.svg#logo-mobile"></use></svg>
+            <svg class="main-nav__icon-logo-tablet" width="173" height="58"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+            <svg class="main-nav__icon-logo-desktop" width="202" height="59"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
+          </a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html" class="site-list__point site-list__point--href">Главная</a>
@@ -32,9 +33,9 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hiden">Кэт Энерджи - фитнес еда для кошек</h1>
+      <h1 class="visually-hidden">Кэт Энерджи - фитнес еда для кошек</h1>
       <section class="page-main__site-item description">
-        <h2 class="visually-hiden">Навигация</h2>
+        <h2 class="visually-hidden">Навигация</h2>
         <h3 class="description__name">Каталог продукции</h3>
       </section>
       <section class="page-main__products grocery-list">
@@ -257,45 +258,103 @@
               </div>
               <a href="#" class="price-list__btn button">Заказать</a>
             </li>
-            <li class="price-list__item option">
+            <li class="option price-list__item price-list__item--opt">
               <div class="option__wrapper">
                 <a href="#" class="option__add option__add--img"></a>
                 <h3 class="option__name">Показать еще 100500 товаров</h3>
                 <p class="option__item">На самом деле вкусов гораздо больше!</p>
               </div>
-              <a href="#" class="option__btn button">Показать все</a>
+              <a href="#" class="option__btn button-dop">Показать все</a>
             </li>
           </ul>
         </div>
       </section>
+      <section class="extra">
+        <div class="extra__container">
+          <div class="extra__wrapper-name">
+            <h2 class="extra__description-data">Дополнительные товары</h2>
+            <div class="extra__price-inner add-price">
+              <div class="add-price__list">
+                <div class="add-price__list-item product">
+                  <h3 class="product__name">Сахарозаменитель</h3>
+                  <table class="product__option">
+                    <tr>
+                      <td class="product__field">1 упаковка (100 г)</td>
+                      <td class="product__value">200 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="product__btn button">Заказать</a>
+                </div>
+                <div class="add-price__list-item product">
+                  <h3 class="product__name">Питьевая вода</h3>
+                  <table class="product__option">
+                    <tr>
+                      <td class="product__field">5 литров</td>
+                      <td class="product__value">50 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="product__btn button">Заказать</a>
+                </div>
+                <div class="add-price__list-item product">
+                  <h3 class="product__name">Молоко</h3>
+                  <table class="product__option">
+                    <tr>
+                      <td class="product__field">1 литр</td>
+                      <td class="product__value">100 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="product__btn button">Заказать</a>
+                </div>
+                <div class="add-price__list-item product">
+                  <h3 class="product__name">Витамины</h3>
+                  <table class="product__option">
+                    <tr>
+                      <td class="product__field">1 упаковка (30 г)</td>
+                      <td class="product__value">300 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="product__btn button">Заказать</a>
+                </div>
+              </div>
+              <div class="add-price__promo">
+                <p class="add-price__promo-item">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="page-footer page-footer-catacog">
+    <footer class="page-footer page-footer--catacog">
         <section class="page-footer__cooperation address">
-          <h2 class="visually-hiden">Адрес</h2>
+          <h2 class="visually-hidden">Адрес</h2>
           <div class="address__wrapper">
-            <p class="address__description">Приглашаем к сотрудничеству дилеров!</p>
-            <address class="address__item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <p class="address__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <div class="for__address">
+              <address class="address__item address__item--top">ул. Большая Конюшенная, д. 19/8</address>
+              <address class="address__item">Санкт-Петербург</address>
+            </div>
           </div>
         </section>
         <section class="page-footer__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8544634516978!2d30.322127656627305!3d59.93869160879081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585646810576!5m2!1sru!2sru"></iframe>
         </section>
         <section class="page-footer__contacts social">
-          <h2 class="visually-hiden">Социальные сети</h2>
+          <h2 class="visually-hidden">Социальные сети</h2>
           <div class="social__wrapper">
             <div class="social__wrapper-name">
-              <a href="#" class="social__name"></a>
+              <a href="#" class="social__name"><svg class="social__logo-footer" width="128" height="24"><use xlink:href="img/sprite.svg#logo-footer"></use></svg></a>
             </div>
             <div class="social__wrapper-icon">
               <ul class="social__icon connection">
-                <li><a class="connection__btn connection__btn--vk" href="#" aria-label="Vkontakte"><span class="visually-hiden">Вконтакте</span></a></li>
-                <li><a class="connection__btn connection__btn--inst" href="#" aria-label="Instagram"><span class="visually-hiden">Инстаграм</span></a></li>
-                <li><a class="connection__btn connection__btn--facebook" href="#" aria-label="Facebook"><span class="visually-hiden">Фэйсбук</span></a></li>
+                <li class="connection__item"><a class="connection__btn connection__btn--vk" href="#" aria-label="Vkontakte"><span class="visually-hidden">Вконтакте</span><svg class="connection__icon-vk connection__icon" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a></li>
+                <li class="connection__item"><a class="connection__btn connection__btn--inst" href="#" aria-label="Instagram"><span class="visually-hidden">Инстаграм</span><svg class="connection__icon-inst connection__icon" width="17" height="17"><use xlink:href="img/sprite.svg#icon-inst"></use></svg></a></li>
+                <li class="connection__item connection__item--fb"><a class="connection__btn connection__btn--facebook" href="#" aria-label="Facebook"><span class="visually-hidden">Фэйсбук</span><svg class="connection__icon-fb connection__icon" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a></li>
               </ul>
             </div>
             <div class="social__wrapper-logo">
+              <a href="https://htmlacademy.ru/study" class="social__logo-academy">
               <p class="social__academy">HTML Academy</p>
-              <a href="https://htmlacademy.ru/study" class="social__logo-academy"></a>
+              <svg class="social__icon-logo-academy" width="27" height="34"><use xlink:href="img/sprite.svg#htmlacademy-svg"></use></svg></a>
             </div>
           </div>
         </section>

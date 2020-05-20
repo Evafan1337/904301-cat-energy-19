@@ -12,6 +12,13 @@
 @import "main/welcome";
 @import "main/description-form";
 @import "main/form";
+@import "main/extra";
+@import "main/product";
+@import "main/add-price";
+@import "main/example";
+@import "main/effect";
+@import "main/effect-slider";
+@import "main/effect-filter";
 @import "footer/address";
 @import "footer/connection";
 @import "footer/page-footer";
@@ -29,11 +36,8 @@ body {
   background-color: #ffffff;
 }
 
-.button {
-  text-decoration: none;
-}
-
-.visually-hiden {
+.visually-hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;

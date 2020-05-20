@@ -93,6 +93,11 @@
     padding-bottom: 0;
   }
 
+  .price-list__item--opt {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+  }
+
   .price-list__wrapper {
     flex-direction: column;
     padding-left: 37px;

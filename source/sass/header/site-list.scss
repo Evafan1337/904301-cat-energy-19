@@ -122,8 +122,20 @@
     &:active {
       color: rgba(0, 0, 0, 0.3);
 
-      background-color: #ffffff;
+      background-color: transparent;
       opacity: 1;
+    }
+  }
+
+  .page-header--index .site-list__point--href {
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

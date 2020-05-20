@@ -5,14 +5,14 @@
 }
 
 .log-img {
-  margin-left: 20px;
-  padding-top: 11px;
-  padding-bottom: 15px;
-  width: 191px;
-  height: 39px;
-  background-image: url("../img/logo-mobile.svg");
-  background-repeat: no-repeat;
-  background-position-y: 11px;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: 768px) {
@@ -20,10 +20,6 @@
     padding: 0;
     margin: 0;
     padding-top: 24px;
-    background-position-y: 24px;
-    width: 174px;
-    height: 59px;
-    background-image: url("../img/logo-tablet.svg");
   }
 
   .page-header__logo {
@@ -40,7 +36,5 @@
 
   .log-img {
     padding-top: 24px;
-    background-position-y: 22px;
-    background-image: url("../img/logo-desktop.svg");
   }
 }

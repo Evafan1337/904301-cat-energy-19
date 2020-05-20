@@ -76,7 +76,7 @@
 
 .fit-food__description {
   margin: 0;
-  padding-top: 29px;
+  padding-top: 30px;
   font-family: "Arial", sans-serif;
   text-align: left;
   padding-bottom: 23px;
@@ -84,13 +84,38 @@
 }
 
 .fit-food__details {
-  display: block;
-  font-size: 16px;
-  line-height: 1;
-  color: #111111;
-  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  margin-top: 20px;
+  padding-top: 18px;
+
+  &:hover .fit-food__icon-arrow-verylong {
+    width: 34px;
+    height: 12px;
+  }
+
+  &:focus .fit-food__icon-arrow-verylong {
+    width: 34px;
+    height: 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.fit-food__catalog {
+  z-index: 1;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111;
+  width: auto;
+  padding-right: 10px;
+  margin: 0;
+  background-color: #f2f2f2;
 }
 
 .fit-food__details--arrow {
@@ -106,6 +131,12 @@
 .fit-food__caption--cat-pro {
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
+}
+
+.fit-food__icon-arrow-verylong {
+  width: 25px;
+  height: 12px;
+  padding-top: 3px;
 }
 
 @media (min-width: 768px) {
