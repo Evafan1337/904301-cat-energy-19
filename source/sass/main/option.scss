@@ -62,13 +62,40 @@
 }
 
 @media (min-width: 768px) {
+  .option {
+    border: 1px solid #e6e6e6;
+  }
+
   .option__wrapper {
-    padding-top: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 54px 37px 40px;
   }
 
   .option__add::before {
     width: 61px;
     height: 61px;
     margin-top: 55px;
+  }
+
+  .option__name {
+    font-size: 20px;
+    width: 160px;
+    padding-top: 109px;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .option__item {
+    font-size: 16px;
+    line-height: 1.2em;
+    width: 190px;
+    margin-bottom: 22px;
+  }
+
+  .option__btn {
+    margin-left: 37px;
+    margin-right: 37px;
   }
 }

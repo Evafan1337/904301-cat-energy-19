@@ -1,3 +1,8 @@
+.address {
+  position: absolute;
+  width: 100%;
+}
+
 .address__description {
   width: 123px;
   margin: 0;
@@ -23,11 +28,15 @@
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-right: 24px;
+  padding-left: 19px;
 }
 
 @media (min-width: 768px) {
+  .address {
+    position: inherit;
+  }
+
   .address__wrapper {
     display: flex;
     justify-content: space-between;
@@ -36,7 +45,17 @@
     padding-top: 69px;
     padding-bottom: 62px;
     padding-left: 71px;
-    padding-right: 71px;
+    padding-right: 72px;
+  }
+
+  .page-footer--catacog .address__wrapper {
+    padding-top: 64px;
+    padding-left: 71px;
+    padding-right: 72px;
+  }
+
+  .page-footer--form .address__wrapper {
+    padding-top: 63px;
   }
 
   .address__description {
@@ -52,6 +71,10 @@
     line-height: 1.25;
     color: #444444;
   }
+
+  .address__item--top {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -65,5 +88,11 @@
 
   .address__item {
     text-align: left;
+  }
+
+  .page-footer--form .address__wrapper {
+    padding-top: 74px;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 }

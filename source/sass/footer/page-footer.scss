@@ -2,14 +2,60 @@
   padding: 0;
 }
 
+.page-footer--form .address {
+  background-color: #f2f2f2;
+}
+
 .page-footer__cooperation {
   min-height: 114px;
+  background-color: #ffffff;
 }
 
 .page-footer__contacts {
   background-color: #f2f2f2;
 }
 
-.page-footer-catacog {
+.page-footer--catacog .address {
   background-color: #f2f2f2;
+}
+
+.page-footer__map {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  min-width: 320px;
+  min-height: 400px;
+  padding-top: 76px;
+  background-position: bottom;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: auto 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    min-width: 767px;
+    min-height: 400px;
+    padding: 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: auto 400px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-footer__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    min-width: 1440px;
+    min-height: 400px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: auto 400px;
+    }
+  }
 }

@@ -88,6 +88,19 @@
   }
 }
 
+.main-nav__icon-logo-mobile {
+  padding-top: 11px;
+  padding-left: 20px;
+}
+
+.main-nav__icon-logo-tablet {
+  display: none;
+}
+
+.main-nav__icon-logo-desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .main-nav {
     width: auto;
@@ -106,6 +119,18 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav__icon-logo-mobile {
+    display: none;
+  }
+
+  .main-nav__icon-logo-tablet {
+    display: block;
+  }
+
+  .main-nav__icon-logo-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -117,5 +142,13 @@
 
   .main-nav {
     background-color: transparent;
+  }
+
+  .main-nav__icon-logo-tablet {
+    display: none;
+  }
+
+  .main-nav__icon-logo-desktop {
+    display: block;
   }
 }

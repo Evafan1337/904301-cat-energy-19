@@ -93,6 +93,11 @@
     padding-bottom: 0;
   }
 
+  .price-list__item--opt {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+  }
+
   .price-list__wrapper {
     flex-direction: column;
     padding-left: 37px;
@@ -104,15 +109,17 @@
   }
 
   .price-list__container {
-    padding-top: 165px;
+    padding-top: 163px;
     padding-bottom: 33px;
   }
 
   .price-list__name {
-    width: 124px;
+    width: 130px;
     text-align: center;
-    padding-left: 60px;
-    padding-bottom: 28px;
+    padding-left: 61px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   .price-list__components {
@@ -122,34 +129,64 @@
 
   .price-list__line {
     border-bottom: 1px solid #cdcdcd;
-    height: 25px;
   }
 
   .price-list__field {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 1;
+    height: 31px;
   }
 
   .price-list__value {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 1;
+    height: 31px;
   }
 
   .price-list__btn {
     margin-left: 38px;
     margin-right: 38px;
   }
+
+  .price-list__eat--small {
+    margin-left: -38px;
+    margin-top: -137px;
+    min-width: 161px;
+    height: 172px;
+  }
+
+  .price-list__eat--big {
+    margin-left: -38px;
+    margin-top: -154px;
+    min-width: 195px;
+    height: 208px;
+  }
 }
 
 @media (min-width: 1440px) {
   .price-list__item {
     width: 245px;
+    margin-bottom: 142px;
   }
 
   .price-list__name {
     padding-left: 0;
     padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .price-list__wrapper {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .price-list__eat--small {
+    margin-top: -136px;
+  }
+
+  .price-list__container {
+    padding-bottom: 34px;
   }
 }
