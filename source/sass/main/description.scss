@@ -29,7 +29,9 @@
 @media (min-width: 1440px) {
   .description__name {
     border: none;
-    padding-left: 110px;
     padding-top: 73px;
+    margin: 0 auto;
+    max-width: 1220px;
+    padding-left: 40px;
   }
 }

@@ -3,7 +3,7 @@
   padding-left: 0;
   padding-bottom: 0;
   z-index: 100;
-  top: 269px;
+  top: 272px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -60,11 +60,11 @@
 
 @media (min-width: 768px) {
   .effect__filter-range-wrapper {
-    width: 100%;
+    width: 86%;
     display: block;
     padding-left: 0;
     z-index: 100;
-    top: 547px;
+    top: 539px;
     position: absolute;
   }
 
@@ -73,14 +73,15 @@
   }
 
   .effect__filter-range-scale {
-    height: 7px;
+    height: 5px;
     background-color: #dcdcdc;
     border-radius: 6px;
-    width: 70%;
+    width: 75%;
     display: block;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    margin-top: 7px;
   }
 
   .effect__filter-interval {
@@ -115,7 +116,7 @@
   .effect__filter-range-handle {
     position: absolute;
     top: 43%;
-    left: 51%;
+    left: 49%;
     transform: translateY(-50%);
     width: 8px;
     height: 8px;
@@ -128,6 +129,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin-left: -11px;
     transition: all 2s;
+    margin-top: 13px;
   }
 
   .effect__filter-range-handle:hover {
@@ -135,15 +137,26 @@
   }
 
   #was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
-    left: 83.5%;
+    left: 85%;
   }
 
   #will:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
-    left: 16.5%;
+    left: 11%;
   }
 }
 
 @media (min-width: 1440px) {
+  .effect__filter-range-scale {
+    width: 75%;
+    height: 5px;
+    margin-top: 10px;
+  }
+
+  .effect__filter-range-handle {
+    margin-top: 14px;
+    left: 49%;
+  }
+
   .effect__filter-range-wrapper {
     width: 570px;
     display: flex;
@@ -167,6 +180,10 @@
     line-height: 20px;
     text-transform: uppercase;
     z-index: 2;
+    margin-left: -1px;
+    padding-top: 2px;
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 6px;
 
     &::after {
       content: "";

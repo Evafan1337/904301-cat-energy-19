@@ -73,12 +73,15 @@
                   </li>
                 </ul>
               </div>
-              <div class="form__wrapper-data">
-                <h3 class="form__description-data">Контактные данные (владельца кота)</h3>
+            </div>
+            <div class="form__description-container">
+              <h3 class="form__description-data"><span class="form__description-item">Контактные данные (владельца кота)</span></h3>
+            </div>
+              <div class="form__wrapper-data form__wrapper-data--soc">
                 <div class="form__connection-wrapper">
-                  <div class="form__connection-block">
+                  <div class="form__connection-block form__connection-block--email">
                     <label for="email" class="form__label">E-mail:*</label>
-                    <input class="form__input form__input--email" id="email" type="text" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                    <input class="form__input form__input--email" id="email" type="text" name="e-mail" placeholder="kuklachev@gmail.com" >
                     <svg class="form__icon-mail form__icon" width="18" height="14"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
                   </div>
                   <div class="form__connection-block">
@@ -88,14 +91,18 @@
                   </div>
                 </div>
               </div>
+              <div class="form__description-container form__description-container--comment">
+                <h3 class="form__description-data form__description-data--comment"><span class="form__description-item">Комментарий</span></h3>
+              </div>
               <div class="form__wrapper-data form__wrapper-data--comment">
-                <h3 class="form__description-data form__description-data--comment">Комментарий</h3>
                 <div class="form__wrapper-textarea">
                   <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="about"></textarea>
                 </div>
               </div>
+              <div class="form__description-container form__description-container--dop">
+                <h3 class="form__description-data form__description-data--extra"><span class="form__description-item">Дополнительно</span></h3>
+              </div>
               <div class="form__wrapper-data form__wrapper-data--extra">
-                <h3 class="form__description-data form__description-data--extra">Дополнительно</h3>
                 <div class="form__wrapper-check">
                   <ul class="form__check">
                     <li class="form__check-item">
@@ -174,6 +181,17 @@
             navMain.classList.remove('main-nav--opened');
           }
         });
+var form__input = document.querySelector('.form__input--email');
+var form__main = document.querySelector('.form__main');
+        form__main.addEventListener("submit", function(evt) {
+
+if (!form__input.value) {
+  evt.preventDefault();
+  form__input.classList.add("modal-error");
+  console.log("Error");
+}});
+
       </script>
+
 </body>
 </html>

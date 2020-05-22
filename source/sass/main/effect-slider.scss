@@ -2,7 +2,6 @@
   position: relative;
   height: 296px;
   overflow: hidden;
-  width: 413px;
   margin: 0 auto;
 }
 
@@ -79,8 +78,6 @@
 
 .effect-slider__screen--one::before {
   height: 100%;
-  top: 4px;
-  left: 62px;
   right: auto;
   background-image: url("../img/before-mobile@1x.png");
   background-color: transparent;
@@ -90,13 +87,15 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/before-mobile@2x.png");
     background-size: cover;
+    width: 311px;
+    height: 237px;
   }
 }
 
 .effect-slider__screen--two::before {
   height: 100%;
   top: 4px;
-  left: 0;
+  left: -20px;
   right: auto;
   background-image: url("../img/after-mobile@1x.png");
   background-color: transparent;
@@ -105,6 +104,8 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/after-mobile@2x.png");
     background-size: cover;
+    width: 311px;
+    height: 237px
   }
 }
 
@@ -160,7 +161,7 @@
 
   .effect-slider__screen-container--one {
     z-index: 100;
-    width: 51.5%;
+    width: 50%;
     transition: all 2s;
     overflow: hidden;
   }
@@ -193,6 +194,9 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/before-tablet@2x.png");
       background-size: cover;
+      height: 515px;
+      top: 6px;
+      background-position-x: -41px;
     }
   }
 
@@ -208,15 +212,26 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/after-tablet@2x.png");
       background-size: cover;
+      height: 517px;
+      background-position-x: -8px;
     }
   }
 
   #was:checked ~ .effect-slider__screen-container--one {
-    width: 84.5%;
+    width: 85.5%;
   }
 
   #will:checked ~ .effect-slider__screen-container--one {
     width: 16.5%;
+    opacity: 0;
+  }
+
+    #was:checked ~ .effect-slider__screen-container--two {
+    opacity: 0;
+  }
+
+  .effect-slider__screen-container--two {
+    transition: all 2s;
   }
 }
 
@@ -269,7 +284,11 @@
 
   .effect-slider__screen-container--one {
     z-index: 100;
-    width: 55%;
+    width: 53%;
+    transition: all 2s;
+  }
+
+  .effect-slider__screen-container--two {
     transition: all 2s;
   }
 
@@ -306,6 +325,9 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/before-desktop@2x.png");
       background-size: cover;
+      height: 515px;
+      top: 8px;
+      background-position-x: -38px;
     }
   }
 
@@ -320,6 +342,8 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/after-desktop@2x.png");
       background-size: cover;
+      height: 520px;
+      right: 35px;
     }
   }
 }

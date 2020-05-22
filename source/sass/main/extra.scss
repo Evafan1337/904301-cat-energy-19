@@ -11,65 +11,84 @@
   position: relative;
 }
 
-.extra__wrapper-name::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 3px;
-  width: 100%;
-  top: 13px;
-  right: -20px;
-  z-index: -1;
-  background-color: #68b738;
-}
-
 .extra__description-data {
-  width: 228px;
+  width: auto;
   font-size: 24px;
   line-height: 1;
   text-align: left;
   color: #111111;
-  background-color: #ffffff;
+  background-color: transparent;
   padding-right: 19px;
-  margin-top: 27px;
+  margin-top: -16px;
   margin-bottom: 33px;
 }
 
+.extra__description-item {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  padding-left: 19px;
+  padding-right: 23px;
+}
+
+.extra__description-container {
+  width: 100%;
+  border-top: 3px solid #68b738;
+  margin-top: 39px;
+}
+
 @media (min-width: 768px) {
+  .extra__description-container {
+    margin-top: 0;
+  }
+
   .extra__container {
     padding-left: 30px;
     padding-right: 30px;
   }
 
+  .extra__description-item {
+    margin-left: -30px;
+    padding-left: 36px;
+    padding-right: 35px;
+  }
+
   .extra__description-data {
     font-size: 36px;
     line-height: 1;
-    width: 340px;
-    padding-left: 37px;
-    margin-top: -74px;
-    padding-right: 33px;
-  }
-
-  .extra__wrapper-name::before {
-    width: 200%;
-    top: 20px;
-    right: -30px;
+    width: auto;
+    padding-left: 61px;
+    margin-top: -25px;
+    background-color: transparent;
   }
 
   .extra {
     padding-bottom: 77px;
+    margin-top: -54px;
   }
 }
 
 @media (min-width: 1440px) {
+  .extra {
+    margin-top: -46px;
+  }
+
   .extra__container {
-    padding-left: 110px;
-    padding-right: 110px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 
   .extra__description-data {
-    margin-top: -68px;
-    padding-left: 38px;
-    margin-left: -39px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 0;
+    margin-top: -25px;
+    background-color: transparent;
+  }
+
+  .extra__description-item {
+    margin-left: -28px;
+    padding-left: 36px;
+    padding-right: 35px;
   }
 }
