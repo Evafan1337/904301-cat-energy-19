@@ -76,7 +76,14 @@
   }
 
   .connection {
-    padding: 19px 0 17px;
+    padding: 14px 0 17px;
     padding-right: 4px;
   }
+}
+
+@media (min-width: 1440px) {
+  .connection {
+    padding-top: 0;
+  }
+
 }

@@ -135,9 +135,8 @@
 
 @media (min-width: 1440px) {
   .main-nav__wrapper {
-    width: 1220px;
-    margin-right: 110px;
-    margin-left: 110px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 
   .main-nav {

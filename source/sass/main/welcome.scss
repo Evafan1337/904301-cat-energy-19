@@ -28,7 +28,7 @@
   position: relative;
   padding-top: 28px;
   padding-right: 34px;
-  padding-bottom: 25px;
+  padding-bottom: 2px;
   padding-left: 34px;
   min-height: 110px;
 }
@@ -49,6 +49,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-can-mobile@2x.png");
       background-size: 280px auto;
+      top: 168px;
     }
 }
 
@@ -65,7 +66,7 @@
   margin-top: 26px;
   line-height: 1;
   text-align: center;
-  margin-bottom: 274px;
+  margin-bottom: 302px;
 }
 
 .welcome__btn {
@@ -76,11 +77,12 @@
   color: #ffffff;
   text-align: center;
   box-sizing: border-box;
-  padding: 11px 71px 11px 69px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin: 0;
+  margin-left: -14px;
+  margin-right: -14px;
   margin-top: 3px;
-  margin-bottom: 3px;
 }
 
 @media (min-width: 768px) {
@@ -104,7 +106,7 @@
 
   .welcome {
     color: black;
-    padding-bottom: 510px;
+    padding-bottom: 508px;
   }
 
   .welcome__slogan {
@@ -130,8 +132,9 @@
   .welcome__btn {
     margin: 0;
     line-height: 1;
-    margin-left: 120px;
-    padding: 16px 26px 16px 20px;
+    margin-left: 84px;
+    margin-top: 24px;
+    padding: 16px 21px 16px 20px;
     font-size: 20px;
     min-width: 245px;
     margin-right: 100%;
@@ -157,12 +160,12 @@
 
   .welcome {
     position: unset;
-    padding-bottom: 268px;
+    padding-bottom: 266px;
   }
 
   .welcome__wrapper {
-    padding-left: 110px;
-    padding-right: 110px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 
   .welcome__slogan {
@@ -193,8 +196,9 @@
 
   .welcome__btn {
     margin-right: 100%;
-    margin-left: 190px;
+    margin-left: 80px;
     padding-top: 15px;
-    padding-left: 23px;
+    margin-top: 26px;
+
   }
 }

@@ -17,7 +17,9 @@
 
 @media (min-width: 1440px) {
   .grocery-list__wrapper {
-    padding-left: 110px;
-    padding-right: 110px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

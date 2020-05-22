@@ -140,6 +140,15 @@
 }
 
 @media (min-width: 768px) {
+  .fit-food__catalog {
+    font-size: 20px;
+    padding-right: 23px;
+  }
+
+  .fit-food__icon-arrow-verylong {
+    padding-top: 0;
+  }
+
   .fit-food__item {
     margin-top: 30px;
   }
@@ -211,7 +220,7 @@
   .fit-food__description-cat {
     padding: 0;
     padding-top: 25px;
-    padding-bottom: 56px;
+    padding-bottom: 58px;
     box-sizing: border-box;
     padding-right: 218px;
   }
@@ -219,7 +228,7 @@
   .fit-food__description-tiger {
     padding: 0;
     padding-top: 24px;
-    padding-bottom: 56px;
+    padding-bottom: 60px;
     box-sizing: border-box;
     padding-right: 250px;
   }
@@ -233,8 +242,8 @@
   }
 
   .fit-food__wrapper {
-    margin-right: 110px;
-    margin-left: 110px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 
   .fit-food__item:first-child {

@@ -24,7 +24,7 @@
 
 .address__wrapper {
   padding-bottom: 26px;
-  padding-top: 31px;
+  padding-top: 29px;
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
@@ -42,10 +42,10 @@
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    padding-top: 69px;
+    padding-top: 63px;
     padding-bottom: 62px;
-    padding-left: 71px;
-    padding-right: 72px;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 
   .page-footer--catacog .address__wrapper {
@@ -78,14 +78,6 @@
 }
 
 @media (min-width: 1440px) {
-  .address {
-    width: 570px;
-    position: absolute;
-    background-color: #ffffff;
-    margin-top: 95px;
-    margin-left: 110px;
-  }
-
   .address__item {
     text-align: left;
   }
@@ -94,5 +86,24 @@
     padding-top: 74px;
     padding-left: 76px;
     padding-right: 89px;
+  }
+
+  .page-footer--catacog .address__wrapper {
+    padding-top: 73px;
+    padding-left: 75px;
+    padding-right: 89px;
+    padding-bottom: 62px;
+  }
+
+  .address__container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .address {
+    width: 570px;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 110px;
   }
 }
