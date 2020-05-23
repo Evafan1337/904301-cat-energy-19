@@ -19,9 +19,9 @@
   z-index: -1;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/index-background-mobile@2x.jpg");
-      background-size: cover;
-    }
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .welcome__wrapper {
@@ -47,10 +47,10 @@
   background-position-x: center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/index-can-mobile@2x.png");
-      background-size: 280px auto;
-      top: 168px;
-    }
+    background-image: url("../img/index-can-mobile@2x.png");
+    background-size: 280px auto;
+    top: 168px;
+  }
 }
 
 .welcome__slogan {
@@ -199,6 +199,5 @@
     margin-left: 80px;
     padding-top: 15px;
     margin-top: 26px;
-
   }
 }

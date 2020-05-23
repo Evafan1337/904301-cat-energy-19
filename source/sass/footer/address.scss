@@ -44,8 +44,8 @@
     margin: 0;
     padding-top: 63px;
     padding-bottom: 62px;
-    padding-left: 76px;
-    padding-right: 89px;
+    padding-left: 71px;
+    padding-right: 72px;
   }
 
   .page-footer--catacog .address__wrapper {
@@ -105,5 +105,10 @@
     position: absolute;
     margin-top: 95px;
     margin-left: 110px;
+  }
+
+  .address__wrapper {
+    padding-left: 76px;
+    padding-right: 90px;
   }
 }

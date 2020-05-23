@@ -34,6 +34,14 @@ body {
   line-height: 1.29;
   color: #444444;
   background-color: #ffffff;
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+     src: local(''),
+         url('fonts/oswaldregular.woff2') format('woff2'),
+         url('fonts/oswaldregular.woff') format('woff');
+         }
 }
 
 .visually-hidden {

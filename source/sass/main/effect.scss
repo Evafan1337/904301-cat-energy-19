@@ -10,7 +10,7 @@
   padding-bottom: 362px;
 }
 
-.effect__title-wrapper{
+.effect__title-wrapper {
   margin: 0 20px;
 }
 
@@ -102,7 +102,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-top: 0px;
+  padding-top: 0;
   overflow: hidden;
 }
 
@@ -238,7 +238,6 @@
   .effect__text-container {
     margin: 0 30px;
   }
-
 }
 
 @media (min-width: 1440px) {
@@ -282,7 +281,7 @@
   }
 
   .effect__title-wrapper {
-    background: #fff;
+    background: #ffffff;
     position: relative;
     z-index: 25;
     margin: 0;

@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0;
   margin: 0;
   width: 100%;
   justify-content: center;
@@ -44,7 +43,6 @@
 
 .connection__icon-inst {
   fill: #666666;
-
 }
 
 .connection__icon-fb {
@@ -55,7 +53,7 @@
   .connection__icon-vk {
     width: 30px;
     height: 16px;
-}
+  }
 
   .connection__icon-inst {
     width: 23px;
@@ -85,5 +83,4 @@
   .connection {
     padding-top: 0;
   }
-
 }

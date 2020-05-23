@@ -2,25 +2,19 @@
   list-style: none;
 }
 
-.social__academy {
-  margin-top: 10px;
-}
-
 .social__name {
   display: block;
-  // background-image: url("../img/logo-footer.svg");
-  // background-repeat: no-repeat;
   width: 128px;
   height: 24px;
   margin-top: 36px;
   margin-bottom: 31px;
 
   &:hover,
-  &:focus{
+  &:focus {
     opacity: 0.8;
   }
 
-  &:active{
+  &:active {
     opacity: 0.6;
   }
 }
@@ -31,6 +25,7 @@
   font-size: 16px;
   line-height: 1;
   text-align: left;
+  margin-top: 10px;
 }
 
 .social__icon-logo-academy {
@@ -38,8 +33,6 @@
 }
 
 .social__logo-academy {
-  display: block;
-  text-decoration: none;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -157,7 +150,7 @@
 
   .social__academy {
     padding-right: 23px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .social__logo-academy {
@@ -166,6 +159,10 @@
 
   .social__wrapper-name {
     padding-bottom: 15px;
+  }
+
+  .page-footer--form .social__wrapper-name {
+    padding-bottom: 0;
   }
 
   .social__icon-logo-academy {
