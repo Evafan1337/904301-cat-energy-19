@@ -16,7 +16,7 @@
 .effect__filter-range-scale {
   height: 14px;
   background-color: #ffffff;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 6px;
   width: 81px;
   margin: 0 auto;
@@ -54,8 +54,8 @@
 }
 
 .effect__after {
-    left: auto;
-    right: 0;
+  left: auto;
+  right: 0;
 }
 
 @media (min-width: 768px) {
@@ -191,10 +191,6 @@
       z-index: 2;
     }
   }
-
-  .effect__filter-range-wrapper {}
-
-  .effect__filter-range-handle {}
 
   #was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
     left: 87%;

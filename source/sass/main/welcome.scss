@@ -15,13 +15,13 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 100%;
+  background-size: cover;
   z-index: -1;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/index-background-mobile@2x.jpg");
-      background-size: cover;
-    }
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .welcome__wrapper {
@@ -47,10 +47,10 @@
   background-position-x: center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/index-can-mobile@2x.png");
-      background-size: 280px auto;
-      top: 168px;
-    }
+    background-image: url("../img/index-can-mobile@2x.png");
+    background-size: 280px auto;
+    top: 168px;
+  }
 }
 
 .welcome__slogan {
@@ -147,10 +147,11 @@
     width: 50%;
     top: 0;
     right: 0;
-    left: unset;
+    left: auto;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: 3% 97%;
     min-height: 665px;
+    background-size: cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -159,7 +160,7 @@
   }
 
   .welcome {
-    position: unset;
+    position: static;
     padding-bottom: 266px;
   }
 
@@ -199,6 +200,5 @@
     margin-left: 80px;
     padding-top: 15px;
     margin-top: 26px;
-
   }
 }

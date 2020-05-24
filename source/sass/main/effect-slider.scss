@@ -3,31 +3,23 @@
   height: 296px;
   overflow: hidden;
   margin: 0 auto;
+  width: 300px;
 }
 
 .effect-slider__screen-container {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .effect-slider__screen {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   position: relative;
-
-}
-
-.effect-slider__screen-container {
-  width: 100%;
-  height: 100%;
-}
-
-.effect-slider__screen-container--one {
-  width: 100%;
 }
 
 #was:checked ~ .effect-slider__screen-container--one {
@@ -59,12 +51,6 @@
   width: 100%;
   transition: all 2s;
   overflow: hidden;
-}
-
-.effect-slider__screen {
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
 .effect-slider__screen::before {
@@ -105,7 +91,7 @@
     background-image: url("../img/after-mobile@2x.png");
     background-size: cover;
     width: 311px;
-    height: 237px
+    height: 237px;
   }
 }
 
@@ -122,10 +108,6 @@
     z-index: 100;
   }
 
-  .effect-slider__screen {
-    position: relative;
-  }
-
   .effect-slider__screen-container {
     width: 100%;
     height: 100%;
@@ -136,7 +118,7 @@
     width: 100%;
     height: 100%;
     display: block;
-    background-color: #fff;
+    background-color: #ffffff;
     position: absolute;
     top: 0;
     left: 0;
@@ -226,7 +208,7 @@
     opacity: 0;
   }
 
-    #was:checked ~ .effect-slider__screen-container--two {
+  #was:checked ~ .effect-slider__screen-container--two {
     opacity: 0;
   }
 
@@ -247,6 +229,8 @@
 
   .effect-slider__screen {
     position: relative;
+    width: 100%;
+    height: 100%;
   }
 
   .effect-slider__screen-container {
@@ -259,7 +243,7 @@
     width: 100%;
     height: 100%;
     display: block;
-    background-color: #fff;
+    background-color: #ffffff;
     position: absolute;
     top: 0;
     left: 0;
@@ -298,12 +282,6 @@
 
   #will:checked ~ .effect-slider__screen-container--one {
     width: 19%;
-  }
-
-  .effect-slider__screen {
-    width: 100%;
-    height: 100%;
-    position: relative;
   }
 
   .effect-slider__screen::before {
