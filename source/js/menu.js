@@ -15,17 +15,12 @@ navToggle.addEventListener('click', function () {
 });
 
 formMain.addEventListener("submit", function (evt) {
-    if (requireEls) {
-        requireEls.forEach(function(el){
-            if (
-            !el.value
-        ) {
-            evt.preventDefault();
-            el.classList.add("error");
-
-        }
-
-        });
-
-    }
+  if (requireEls) {
+    requireEls.forEach(function(el){
+      if (!el.value) {
+        evt.preventDefault();
+        el.classList.add("error");
+      }
+    });
+  }
 });
