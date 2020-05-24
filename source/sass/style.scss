@@ -1,4 +1,4 @@
-// @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import "normalize";
 @import "header/page-header";
 @import "header/main-nav";
 @import "header/site-list";
@@ -24,6 +24,7 @@
 @import "footer/page-footer";
 @import "footer/social";
 @import "fonts";
+
 
 body {
   min-width: 320px;
