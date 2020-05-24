@@ -42,6 +42,12 @@
   padding-bottom: 11px;
   display: inline-block;
 
+  &:hover,
+  &:focus {
+    width: 90%;
+    border: 1px solid yellow;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -81,6 +87,11 @@
 
 .form__input-prog:checked + .form__label-programms::after {
   display: block;
+}
+
+.form__input-prog:focus + .form__label-programms {
+  width: 90%;
+  border: solid 1px #444444;
 }
 
 .form__filter-item {
@@ -289,6 +300,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+}
+
+.form__check-input:focus + .form__check-label {
+  border: solid 1px #444444;
 }
 
 .form__check-item {

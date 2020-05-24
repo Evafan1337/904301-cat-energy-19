@@ -5,6 +5,10 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" />
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
+    <link rel="preload" href="./fonts/oswaldregular.woff" as="font" />
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <link href="./css/style.min.css" rel="stylesheet">
     <script>
     document.createElement("picture");
@@ -16,14 +20,11 @@
     </script>
   </head>
   <body>
-    <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
-    </div>
     <header class="page-header">
       <nav class="main-nav nav-mock main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <a href="index.html" class="page-header__logo log-img">
+          <a href="index.html" class="page-header__logo log-img"><span class="visually-hidden">Cat-energy-logo</span>
             <svg class="main-nav__icon-logo-mobile" width="191" height="38"><use xlink:href="img/sprite.svg#logo-mobile"></use></svg>
             <svg class="main-nav__icon-logo-tablet" width="173" height="58"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
             <svg class="main-nav__icon-logo-desktop" width="202" height="59"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
@@ -51,7 +52,7 @@
           <p class="description-form__profile">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
       </section>
-      <section class="page-main__forma form">
+      <section class="page-main__form-main form">
           <form action="https://echo.htmlacademy.ru" method="post" class="form__main">
             <div class="form__wrapper-main">
               <div class="form__field-name">
@@ -71,15 +72,15 @@
               <div class="form__wrapper-objective">
                 <ul class="form__filter">
                   <li class="form__filter-item">
-                    <input type="radio" name="qqq" class="visually-hidden form__input-prog" value="filter-slim" id="slim" checked>
+                    <input type="radio" name="qqq" class="visually-hidden form__input-prog" value="filter-slim" id="slim" tabindex="0" checked>
                     <label for="slim" class="form__label-programms">Похудение</label>
                   </li>
                   <li class="form__filter-item">
-                    <input type="radio" name="qqq" class="visually-hidden form__input-prog"  value="filter-pro" id="pro">
+                    <input type="radio" name="qqq" class="visually-hidden form__input-prog"  value="filter-pro" id="pro" tabindex="0">
                     <label for="pro" class="form__label-programms">Набор массы</label>
                   </li>
                   <li class="form__filter-item">
-                    <input type="radio" name="qqq"  class="visually-hidden form__input-prog" value="need-advice" id="unknown">
+                    <input type="radio" name="qqq"  class="visually-hidden form__input-prog" value="need-advice" id="unknown" tabindex="0">
                     <label for="unknown" class="form__label-programms">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
@@ -161,7 +162,7 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <div class="social__wrapper">
             <div class="social__wrapper-name">
-              <a href="#" class="social__name"><svg class="social__logo-footer" width="128" height="24"><use xlink:href="img/sprite.svg#logo-footer"></use></svg></a>
+              <a href="#" class="social__name"><span class="visually-hidden">Cat-energy-logo</span><svg class="social__logo-footer" width="128" height="24"><use xlink:href="img/sprite.svg#logo-footer"></use></svg></a>
             </div>
             <div class="social__wrapper-icon">
               <ul class="social__icon connection">
