@@ -29,31 +29,3 @@ formMain.addEventListener("submit", function (evt) {
 
     }
 });
-/*
-      <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-        navMain.classList.remove('main-nav--nojs');
-        navToggle.addEventListener('click', function() {
-          if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-          }
-          else {
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-          }
-        });
-var form__input = document.querySelector('.form__input--email');
-var form__main = document.querySelector('.form__main');
-        form__main.addEventListener("submit", function(evt) {
-
-if (!form__input.value) {
-  evt.preventDefault();
-  form__input.classList.add("modal-error");
-  console.log("Error");
-}});
-
-      </script>
-
-*/
