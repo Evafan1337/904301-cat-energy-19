@@ -33,11 +33,11 @@
   left: 62px;
 }
 
-#was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
+.effect-slider__was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
   left: 62px;
 }
 
-#will:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
+.effect-slider__will:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
   left: 99px;
 }
 
@@ -136,11 +136,11 @@
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
   }
 
-  #was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
+  .effect-slider__was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
     left: 85%;
   }
 
-  #will:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
+  .effect-slider__will:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
     left: 11%;
   }
 }
@@ -192,11 +192,11 @@
     }
   }
 
-  #was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
+  .effect-slider__was:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
     left: 87%;
   }
 
-  #will:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
+  .effect-slider__will:checked ~ .effect__filter-range-wrapper .effect__filter-range-handle {
     left: 12%;
   }
 }
